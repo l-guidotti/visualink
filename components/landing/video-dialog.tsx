@@ -28,15 +28,15 @@ export function VideoDialog({ children }: VideoDialogProps) {
       <div onClick={() => setOpen(true)} className="cursor-pointer">
         {children}
       </div>
-      <DialogContent 
-        className="max-w-4xl w-full p-0 bg-black border-none overflow-hidden rounded-2xl" 
+      <DialogContent
+        className="max-w-4xl w-full p-0 bg-black border-none overflow-hidden rounded-2xl"
         aria-describedby={undefined}
       >
         <DialogTitle className="sr-only">Como funciona a Visualink</DialogTitle>
         <div className="relative aspect-video">
           <video
             ref={videoRef}
-            src="/videos/como-funciona.mp4"
+            //src="/videos/como-funciona.mp4"
             controls
             autoPlay
             controlsList="nodownload"
