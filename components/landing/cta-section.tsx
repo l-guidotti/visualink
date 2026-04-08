@@ -11,9 +11,16 @@ const features = [
 
 export function CTASection() {
   return (
-    <section className="py-20 lg:py-28 relative overflow-hidden">
+    <section className="pt-32 pb-20 lg:pt-40 lg:pb-28 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0A2540] via-[#0D3251] to-[#0A2540]" />
+
+      {/* Top wave */}
+      <div className="absolute -top-[1px] left-0 right-0 w-full rotate-180">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
+          <path d="M0 100V60C240 20 480 0 720 20C960 40 1200 80 1440 60V100H0Z" fill="var(--background)" />
+        </svg>
+      </div>
 
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#7ACFE5]/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
