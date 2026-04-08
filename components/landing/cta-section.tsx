@@ -56,7 +56,7 @@ export function CTASection() {
           <Button
             size="lg"
             className="bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold px-10 py-7 text-lg rounded-xl shadow-lg shadow-[#25D366]/25 transition-all hover:shadow-xl hover:shadow-[#25D366]/30 hover:scale-105 animate-pulse-glow"
-          >
+            onClick={() => window.open("https://wa.me/5553981364363", "_blank")}>
             <MessageCircle className="mr-2 w-6 h-6" />
             Falar no WhatsApp
             <ArrowRight className="ml-2 w-5 h-5" />
