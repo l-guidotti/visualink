@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Como funciona", href: "#como-funciona" },
   { label: "Beneficios", href: "#beneficios" },
   { label: "Clientes", href: "#clientes" },
+  { label: "Perguntas frequentes", href: "#faq" },
 ]
 
 export function Header() {
@@ -36,8 +37,8 @@ export function Header() {
             <img
               src="/photos/visualink_logo_sfundo.PNG"
               alt="Visualink"
-              width={100}
-              height={100}
+              width={70}
+              height={70}
               className="object-contain"
             />
           </a>

@@ -30,8 +30,8 @@ const benefits = [
   },
   {
     icon: Clock,
-    title: "Pronto em 48h",
-    description: "Seu negocio online em até 2 dias. Rápido, sem burocracia e sem complicação.",
+    title: "Pronto em até 72h",
+    description: "Seu negocio online em até 3 dias. Rápido, sem burocracia e sem complicação.",
   },
 ]
 

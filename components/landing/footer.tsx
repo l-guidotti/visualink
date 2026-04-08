@@ -10,10 +10,15 @@ export function Footer() {
           {/* Logo and description */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#7ACFE5] to-[#2C8CA5] flex items-center justify-center">
-                <span className="text-white font-bold text-lg">V</span>
-              </div>
-              <span className="text-xl font-bold text-white">Visualink</span>
+              <a href="#" className="flex items-center gap-3">
+                <img
+                  src="/photos/visualink_logo_sfundo.PNG"
+                  alt="Visualink"
+                  width={120}
+                  height={120}
+                  className="object-contain"
+                />
+              </a>
             </div>
             <p className="text-white/60 text-sm max-w-xs text-center md:text-left">
               Transformando visitantes em clientes através de páginas de alta conversão com integração WhatsApp.
