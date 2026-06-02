@@ -65,27 +65,44 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section className="py-20 lg:py-28 bg-[#0A2540] text-white">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <section className="py-20 lg:py-28 bg-[#0A0F1E] text-white relative overflow-hidden">
+      {/* Background Noise and Deep Radial Gradients */}
+      <div className="absolute inset-0 bg-noise opacity-40 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0A0F1E] via-[#2B4BF2]/10 to-[#0A0F1E] pointer-events-none" />
+
+      {/* Grid pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(43,75,242,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(43,75,242,0.02)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+
+      {/* Background Mesh Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-[#2B4BF2]/10 rounded-full blur-[110px] pointer-events-none" />
+
+      {/* Matching top-right glow from cta-section bottom-right */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#2B4BF2]/15 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+
+      <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-[#7ACFE5] uppercase tracking-wider mb-2">
+          <p className="text-sm font-bold text-[#00C2FF] uppercase tracking-wider mb-2">
             Tire suas dúvidas
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white text-balance">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white text-balance tracking-tight">
             Perguntas Frequentes
           </h2>
-          <p className="mt-4 text-lg text-white/80 mx-auto text-pretty">
+          <p className="mt-4 text-lg text-[#6B7FA3] mx-auto text-pretty font-medium">
             Tudo o que você precisa saber sobre como transformamos seus visitantes em clientes reais.
           </p>
         </div>
 
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-white/20">
-              <AccordionTrigger className="text-left text-base sm:text-lg hover:text-white/90">
-                {faq.question}
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
+              className="border border-[#2B4BF2]/20 bg-zinc-950/40 backdrop-blur-sm rounded-2xl px-6 hover:border-[#00C2FF]/40 transition-colors duration-300 overflow-hidden shadow-sm"
+            >
+              <AccordionTrigger className="text-left text-base sm:text-lg font-bold hover:text-white hover:no-underline py-5 text-white/90 group">
+                <span className="group-hover:text-white transition-colors">{faq.question}</span>
               </AccordionTrigger>
-              <AccordionContent className="text-white/70 text-sm sm:text-base leading-relaxed">
+              <AccordionContent className="text-[#6B7FA3] text-sm sm:text-base leading-relaxed pb-5 pt-1 font-medium border-t border-white/5 mt-1">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

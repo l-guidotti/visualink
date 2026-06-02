@@ -1,12 +1,12 @@
 "use client"
 
-import { Users, MessageCircle, Zap, Smartphone, Shield, Clock } from "lucide-react"
+import { Users, MessageCircle, Zap, Smartphone, Shield, Search, Clock } from "lucide-react"
 
 const benefits = [
   {
-    icon: Users,
-    title: "Mais clientes sem esforço",
-    description: "Sua página trabalha 24/7, gerando leads enquanto você foca no que importa: atender seus clientes.",
+    icon: Search,
+    title: "Invisível no Google",
+    description: "Quem não te encontra online, encontra o concorrente.",
   },
   {
     icon: MessageCircle,
@@ -37,17 +37,21 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="py-20 lg:py-28 bg-background">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="py-20 lg:py-28 bg-[#0A0F1E] relative overflow-hidden">
+      {/* Background Orbes and Noise */}
+      <div className="absolute top-1/3 right-10 w-[450px] h-[450px] bg-[#2B4BF2]/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute inset-0 bg-noise opacity-40 pointer-events-none" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-[#7ACFE5] uppercase tracking-wider mb-2">
-            Vantagens exclusivas
+          <p className="text-sm font-bold text-[#00C2FF] uppercase tracking-wider mb-2">
+            O problema que resolvemos
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance">
-            Por que escolher a Visualink?
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white text-balance tracking-tight">
+            Seu concorrente já aparece quando alguém pesquisa no celular. E você?
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Tudo o que você precisa para transformar visitantes em clientes fiéis.
+          <p className="mt-4 text-lg text-[#6B7FA3] max-w-2xl mx-auto text-pretty font-medium">
+            A maioria dos negócios locais ainda depende só de indicação e redes sociais. Isso deixa clientes pra trás todo dia.
           </p>
         </div>
 
@@ -55,17 +59,21 @@ export function Benefits() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="group bg-card border border-border rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-[#7ACFE5]/30"
+              className="group relative glass-card glass-card-hover rounded-2xl p-6 lg:p-8 shadow-sm transition-all duration-300 overflow-hidden border border-[#2B4BF2]/10"
             >
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#0A2540] to-[#0D3251] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                <benefit.icon className="w-7 h-7 text-[#7ACFE5]" />
+              {/* Top hover gradient line */}
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#00C2FF] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              {/* Icon Container */}
+              <div className="w-14 h-14 rounded-xl bg-[#2B4BF2]/10 border border-[#2B4BF2]/30 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:border-[#00C2FF]/60 transition-all duration-300">
+                <benefit.icon className="w-7 h-7 text-[#00C2FF] filter drop-shadow-[0_0_8px_rgba(43,75,242,0.4)]" />
               </div>
 
-              <h3 className="text-lg font-bold text-card-foreground mb-2">
+              <h3 className="text-lg font-bold text-white mb-2 tracking-tight">
                 {benefit.title}
               </h3>
 
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-[#6B7FA3] leading-relaxed text-sm font-medium">
                 {benefit.description}
               </p>
             </div>

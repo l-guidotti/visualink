@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Visualink | Mais clientes, direto no seu WhatsApp',
   description: 'Criamos páginas que transformam visitantes em clientes para o seu negócio. Landing pages de alta conversão com integração WhatsApp.',
-  keywords: ['landing page', 'whatsapp', 'marketing digital', 'conversão', 'clientes'],
+  keywords: ['landing page', 'whatsapp', 'marketing digital', 'conversão', 'clientes', 'pelotas', 'rs', 'pagina web', 'sites', 'loja online', 'ecommerce', 'criacao de sites', 'loja virtual', 'site institucional', 'site de vendas', 'landing page profissional', 'pagina de vendas', 'loja virtual profissional'],
   icons: {
     icon: '/photos/visualink_logo_sfundo.PNG',
     apple: '/photos/visualink_logo_sfundo.PNG',

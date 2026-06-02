@@ -3,6 +3,7 @@ import { Hero } from "@/components/landing/hero"
 import { ClientsCarousel } from "@/components/landing/clients-carousel"
 import { HowItWorks } from "@/components/landing/how-it-works"
 import { Benefits } from "@/components/landing/benefits"
+import { Plans } from "@/components/landing/plans"
 import { CTASection } from "@/components/landing/cta-section"
 import { Footer } from "@/components/landing/footer"
 import { WhatsAppButton } from "@/components/landing/whatsapp-button"
@@ -14,16 +15,19 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <section id="como-funciona">
-          <HowItWorks />
-        </section>
         <section id="beneficios">
           <Benefits />
         </section>
-        <CTASection />
+        <section id="planos">
+          <Plans />
+        </section>
+        <section id="como-funciona">
+          <HowItWorks />
+        </section>
         <section id="clientes">
           <ClientsCarousel />
         </section>
+        <CTASection />
         <section id="faq">
           <FAQ />
         </section>

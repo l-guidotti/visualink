@@ -4,23 +4,26 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-[#0A2540]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-[#0A0F1E] border-t border-[#2B4BF2]/20 relative overflow-hidden bg-noise">
+      {/* Subtle Bottom Radial Glow */}
+      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#2B4BF2]/5 rounded-full blur-[80px] pointer-events-none" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo and description */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <div className="flex items-center gap-2">
-              <a href="#" className="flex items-center gap-3">
+              <a href="#" className="flex items-center gap-3 transition-transform hover:scale-105 duration-300">
                 <img
                   src="/photos/visualink_logo_sfundo.PNG"
                   alt="Visualink"
                   width={120}
                   height={120}
-                  className="object-contain"
+                  className="object-contain filter drop-shadow-[0_0_8px_rgba(43,75,242,0.25)]"
                 />
               </a>
             </div>
-            <p className="text-white/60 text-sm max-w-xs text-center md:text-left">
+            <p className="text-[#6B7FA3] text-sm max-w-xs text-center md:text-left font-medium leading-relaxed">
               Transformando visitantes em clientes através de páginas de alta conversão com integração WhatsApp.
             </p>
           </div>
@@ -29,7 +32,7 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <a
               href="https://www.instagram.com/visua_link/" target="_blank" rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full bg-[#2B4BF2]/10 hover:bg-[#2B4BF2]/25 border border-[#2B4BF2]/30 flex items-center justify-center transition-all hover:scale-110"
               aria-label="Instagram"
             >
               <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -40,7 +43,7 @@ export function Footer() {
               href="https://wa.me/5553981364363"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-[#25D366] hover:bg-[#20BD5A] flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full bg-[#25D366] hover:bg-[#20BD5A] flex items-center justify-center transition-all hover:scale-110 shadow-md shadow-[#25D366]/20"
               aria-label="WhatsApp"
             >
               <MessageCircle className="w-5 h-5 text-white" />
@@ -49,11 +52,11 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-8 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/50">
+        <div className="mt-8 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#6B7FA3] font-medium">
           <p>&copy; {currentYear} Visualink. Todos os direitos reservados.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-white transition-colors">Termos de Uso</a>
-            <a href="#" className="hover:text-white transition-colors">Privacidade</a>
+            <a href="#" className="hover:text-white transition-colors duration-200">Termos de Uso</a>
+            <a href="#" className="hover:text-white transition-colors duration-200">Privacidade</a>
           </div>
         </div>
       </div>
