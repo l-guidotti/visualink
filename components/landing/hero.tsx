@@ -87,8 +87,8 @@ export function Hero() {
             {/* Stats */}
             <div className="mt-12 flex flex-wrap gap-8 justify-center lg:justify-start">
               <div className="text-center lg:text-left bg-[#12192C]/40 border border-[#2B4BF2]/10 backdrop-blur-sm px-6 py-3 rounded-2xl hover:border-[#00C2FF]/30 transition-all duration-300">
-                <div className="text-3xl font-extrabold text-white">10+</div>
-                <div className="text-xs text-[#6B7FA3] font-semibold uppercase tracking-wider mt-1">Negócios ativos</div>
+                <div className="text-3xl font-extrabold text-white">30+</div>
+                <div className="text-xs text-[#6B7FA3] font-semibold uppercase tracking-wider mt-1">Projetos entregues</div>
               </div>
               <div className="text-center lg:text-left bg-[#12192C]/40 border border-[#2B4BF2]/10 backdrop-blur-sm px-6 py-3 rounded-2xl hover:border-[#00C2FF]/30 transition-all duration-300">
                 <div className="text-3xl font-extrabold text-white">98%</div>
