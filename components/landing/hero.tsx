@@ -49,12 +49,14 @@ export function Hero() {
               <span className="font-semibold">Presença digital para negócios locais</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight text-balance">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight sm:text-balance">
               Seu negócio{" "}
+              <br className="sm:hidden" />
               <span className={`inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#2B4BF2] via-[#00C2FF] to-[#F0F4FF] text-glow transition-all duration-300 ${fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
                 }`}>
                 {currentWord}
               </span>{" "}
+              <br className="sm:hidden" />
               por quem está perto de você
             </h1>
 

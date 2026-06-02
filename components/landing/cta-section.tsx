@@ -51,8 +51,9 @@ export function CTASection() {
           <span className="font-semibold">Comece hoje mesmo</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight text-balance tracking-tight">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight sm:text-balance tracking-tight">
           Seu negócio merece ser{" "}
+          <br className="sm:hidden" />
           <span className={`inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#2B4BF2] to-[#00C2FF] text-glow transition-all duration-300 ${
             fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
           }`}>
