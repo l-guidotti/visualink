@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -38,11 +39,12 @@ export function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 transition-transform hover:scale-105 duration-300">
-            <img
+            <Image
               src="/photos/visualink_logo_sfundo.PNG"
               alt="Visualink"
               width={70}
               height={70}
+              priority
               className="object-contain filter drop-shadow-[0_0_8px_rgba(43,75,242,0.3)]"
             />
           </a>

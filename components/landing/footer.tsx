@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { MessageCircle } from "lucide-react"
 
 export function Footer() {
@@ -14,7 +15,7 @@ export function Footer() {
           <div className="flex flex-col items-center md:items-start gap-4">
             <div className="flex items-center gap-2">
               <a href="#" className="flex items-center gap-3 transition-transform hover:scale-105 duration-300">
-                <img
+                <Image
                   src="/photos/visualink_logo_sfundo.PNG"
                   alt="Visualink"
                   width={120}
